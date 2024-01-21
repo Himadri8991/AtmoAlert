@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Nature Update </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">AtmoAlert Broadcast</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <button type="button" class="w-100 btn btn-lg btn-primary" onclick="window.location.href='home.html'">Home<link rel="import" href="home.html"></button>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About This App</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Quick Search
+              </a>
+              <ul class="dropdown-menu">
+
+                <li><a class="dropdown-item" href="#">Weather </a></li>
+
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Earthquake</a></li>
+
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">News</a></li>
+
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Bla bla Bla</a></li>
+
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"> Usage Guide </a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input id="city" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit" id="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1 class="my-4 text-center">AtmoAlert<span id="Nature"></span></h1>
+      <main>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+              <div class="card-header py-3 text-bg-primary border-primary">
+                <h4 class="my-0 fw-normal">Weather</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">Weather</span><small class="text-body-secondary fw-light"></small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                    
+                  <li>You Can Find Temperatures </li>
+                  <li>You Can Find Humidity</li>
+                  <li>You Can Find Wind Speed</li>
+                  
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-primary" onclick="window.location.href='index.html'">Get started<link rel="import" href="index.html"></button>
+
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+              <div class="card-header py-3 text-bg-primary border-primary">
+                <h4 class="my-0 fw-normal">Earthquake</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">Earthquake<small class="text-body-secondary fw-light"></small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>You Can Find Magnitude of Earthquake</li>
+                  <li>You Can Find Duration of Earthquake</li>
+                  <li>You Can Find Location of Earthquake</li>
+
+                </ul>
+
+                <button type="button" class="w-100 btn btn-lg btn-primary" onclick="window.location.href='##'">Get started<link rel="import" href="##"></button>
+
+                
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+              <div class="card-header py-3 text-bg-primary border-primary">
+                <h4 class="my-0 fw-normal">Tsunami</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">Tsunami<small class="text-body-secondary fw-light"></small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>You Can Find Magnitude of Tsunami</li>
+                  <li>You Can Find Duration of Tsunami</li>
+                  <li>You Can Find location of Tsunami</li>
+                 
+                </ul>
+
+                <button type="button" class="w-100 btn btn-lg btn-primary" onclick="window.location.href='##'">Get started<link rel="import" href="##"></button>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+              <div class="card-header py-3 text-bg-primary border-primary">
+                <h4 class="my-0 fw-normal">Air Pollution</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">Air Pollution</span><small class="text-body-secondary fw-light"></small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                    
+                  <li>You Can Find Air Quality</li>
+                  <li>You Can Find Visibility</li>
+                  <li>You Can Find Sources</li>
+                  
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-primary" onclick="window.location.href='##'">Get started<link rel="import" href="##"></button>
+
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+              <div class="card-header py-3 text-bg-primary border-primary">
+                <h4 class="my-0 fw-normal">Hailstorms</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">Hailstorms</span><small class="text-body-secondary fw-light"></small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                    
+                  <li>You Can Find Magnitude of Hailstorms</li>
+                  <li>You Can Find Duration of Hailstorms</li>
+                  <li>You Can Find location of Hailstorms</li>
+                  
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-primary" onclick="window.location.href='##'">Get started<link rel="import" href="##"></button>
+
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+              <div class="card-header py-3 text-bg-primary border-primary">
+                <h4 class="my-0 fw-normal">Blizzards</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">Blizzards</span><small class="text-body-secondary fw-light"></small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                    
+                  <li>You Can Find Magnitude of Blizzards</li>
+                  <li>You Can Find Duration of Blizzards</li>
+                  <li>You Can Find location of Blizzards</li>
+                  
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-primary" onclick="window.location.href='##'">Get started<link rel="import" href="##"></button>
+
+              </div>
+            </div>
+          </div>
+
+
+<div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+              <div class="card-header py-3 text-bg-primary border-primary">
+                <h4 class="my-0 fw-normal">Hurricanes</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">Hurricanes</span><small class="text-body-secondary fw-light"></small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                    
+                  <li>You Can Find Magnitude of Hurricanes</li>
+                  <li>You Can Find Duration of Hurricanes</li>
+                  <li>You Can Find location of Hurricanes</li>
+                  
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-primary" onclick="window.location.href='##'">Get started<link rel="import" href="##"></button>
+
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+              <div class="card-header py-3 text-bg-primary border-primary">
+                <h4 class="my-0 fw-normal">Tornadoes</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">Tornadoes</span><small class="text-body-secondary fw-light"></small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                    
+                  <li>You Can Find Magnitude of Tornadoes</li>
+                  <li>You Can Find Duration of Tornadoes</li>
+                  <li>You Can Find location of Tornadoes</li>
+                  
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-primary" onclick="window.location.href='##'">Get started<link rel="import" href="##"></button>
+
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+              <div class="card-header py-3 text-bg-primary border-primary">
+                <h4 class="my-0 fw-normal">Daily Updates</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">Daily Updates</span><small class="text-body-secondary fw-light"></small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                    
+                  <li>You Can Find News</li>
+                  <li>You Can Find Major Regular Updates</li>
+                  <li>You Can Find National Bulletin</li>
+                  
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-primary" onclick="window.location.href='##'">Get started<link rel="import" href="##"></button>
+
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        
+    </body>
+    </html>
