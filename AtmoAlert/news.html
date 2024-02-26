@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AtmoAlert News</title>
+    <link rel="stylesheet" href="news.css">
+</head>
+<body>
+
+    <nav>
+        <div class="main-nav container flex">
+            <a class="navbar-brand" href="#">AtmoAlert Daily Updates</a>
+            <button type="button" class="blue" onclick="window.location.href='home.html'">Home<link rel="import" href="home.html">
+                <style>
+                    body {
+                        text-align: center;
+                    }
+             
+                    button {
+                        padding: 5px 10px;
+                        font-size: 16px;
+                        border: none;
+                        cursor: pointer;
+                        border-radius: 4px;
+                        transition: background-color 0.3s ease;
+                    }
+             
+                    .blue {
+                        background-color: #3daaf3;
+                        color: #fff;
+                    }
+            
+                </style>
+            </button>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('weather')">Nature</li>
+                    <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('world')">World</li>
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="e.g. Weather">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+    
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">AtmoAlert News</h3>
+                <h6 class="news-source" id="news-source">AtmoAlert</h6>
+                <p class="news-desc" id="news-desc">AtmoAlert News Updates</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="news.js"></script>
+</body>
+</html> 

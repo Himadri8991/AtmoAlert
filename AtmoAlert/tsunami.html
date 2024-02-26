@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tsunami Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: blue;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        form {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        input[type="text"] {
+            padding: 10px;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-right: 10px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tsunami Prediction</h1>
+    </header>
+    <main>
+        <form id="locationForm">
+            <label for="location">Enter Location:</label>
+            <input type="text" id="location" name="location" placeholder="Enter location">
+            <input type="submit" value="Predict">
+        </form>
+        <div id="predictionResult"></div>
+        <h2>Previous Tsunamis</h2>
+        <table id="previousTsunamis">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Location</th>
+                    <th>Magnitude</th>
+                    <th>Impact</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table rows will be dynamically populated -->
+            </tbody>
+        </table>
+    </main>
+    <script>
+        // JavaScript code to handle form submission and fetch data
+        document.getElementById("locationForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var location = document.getElementById("location").value;
+            // Call your backend API to predict tsunamis and update the UI accordingly
+            // This is just a placeholder
+            var predictionResult = "No upcoming tsunamis predicted at " + location;
+            document.getElementById("predictionResult").innerText = predictionResult;
+            // Assuming you have a backend API to fetch previous tsunami data
+            // This is just a placeholder, replace it with actual API call
+            var previousTsunamis = [
+                { date: "2023-01-15", location: "Pacific Ocean", magnitude: 8.2, impact: "Severe" },
+                { date: "2022-08-05", location: "Indian Ocean", magnitude: 7.5, impact: "Moderate" },
+                // Add more previous tsunami data as needed
+            ];
+            var previousTsunamisTable = document.getElementById("previousTsunamis").getElementsByTagName('tbody')[0];
+            previousTsunamisTable.innerHTML = ''; // Clear previous data
+            previousTsunamis.forEach(function(tsunami) {
+                var row = previousTsunamisTable.insertRow();
+                row.innerHTML = "<td>" + tsunami.date + "</td><td>" + tsunami.location + "</td><td>" + tsunami.magnitude + "</td><td>" + tsunami.impact + "</td>";
+            });
+        });
+    </script>
+</body>
+</html>

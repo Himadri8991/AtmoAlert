@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Earthquake Prediction</title>
+</head>
+<body>
+    <h1>Earthquake Data</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Latitude</th>
+                <th>Longitude</th>
+                <th>Magnitude</th>
+                <th>Depth</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for earthquake in earthquake_data %}
+                <tr>
+                    <td>{{ earthquake.properties.time }}</td>
+                    <td>{{ earthquake.geometry.coordinates[1] }}</td>
+                    <td>{{ earthquake.geometry.coordinates[0] }}</td>
+                    <td
